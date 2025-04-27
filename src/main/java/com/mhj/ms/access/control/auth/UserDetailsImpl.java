@@ -14,7 +14,9 @@ import lombok.Getter;
 @Getter
 public class UserDetailsImpl implements UserDetails {
 
-    private User user; // Classe de usuário que criamos anteriormente
+	private static final long serialVersionUID = -8577330203568408103L;
+	
+	private User user; // Classe de usuário que criamos anteriormente
 
     public UserDetailsImpl(User user) {
         this.user = user;
